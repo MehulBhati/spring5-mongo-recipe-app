@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 @Disabled
 @ExtendWith(SpringExtension.class)
-@DataJpaTest
+//@DataJpaTest
 public class UnitOfMeasureRepositoryIT {
 
     @Autowired
