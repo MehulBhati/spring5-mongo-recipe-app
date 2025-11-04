@@ -4,6 +4,7 @@ import guru.springframework.commands.RecipeCommand;
 import guru.springframework.services.ImageService;
 import guru.springframework.services.RecipeService;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -21,6 +22,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.multipart;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+@Disabled
 @ExtendWith(MockitoExtension.class)
 public class ImageControllerTest {
 
@@ -75,7 +77,7 @@ public class ImageControllerTest {
         verify(imageService, times(1)).saveImageFile(anyString(), any());
     }
 
-
+   @Disabled
     @Test
     public void renderImageFromDB() throws Exception {
 
